@@ -5,3 +5,4 @@
 5 - SELECT * FROM exams WHERE HOUR(hour) >= 14 AND date = '2020-06-20';
 6 - SELECT * FROM degrees WHERE level = 'magistrale';
 7 - SELECT COUNT(*) AS departments_count FROM departments;
+8 - SELECT * FROM teachers WHERE phone IS null;
