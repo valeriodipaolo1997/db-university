@@ -26,3 +26,9 @@ SELECT `students`.`name`, `students`.`surname`, `students`.`registration_number`
 FROM `students`
 JOIN `degrees` ON `degree_id` = `degrees`.`id`
 WHERE `degrees`.`name` = 'Corso di Laurea in Economia';
+
+<!--join n 2-->
+SELECT `degrees`.`name`, `degrees`.`level`, `departments`.`name` AS `department_name`
+FROM `degrees`
+JOIN `departments` ON `department_id` = `departments`.`id`
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
