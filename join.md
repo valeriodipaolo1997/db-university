@@ -32,3 +32,11 @@ SELECT `degrees`.`name`, `degrees`.`level`, `departments`.`name` AS `department_
 FROM `degrees`
 JOIN `departments` ON `department_id` = `departments`.`id`
 WHERE `departments`.`name` = 'Dipartimento di Neuroscienze';
+
+
+<!--join n 3-->
+SELECT `courses`.`name` AS `course_name`, `teachers`.`name` AS `teacher_name`, `teachers`.`surname` AS `teacher_surname`
+FROM `course_teacher`
+JOIN `courses` ON `course_id` = `courses`.`id`
+JOIN `teachers` ON `teacher_id` = `teachers`.`id`
+WHERE `teacher_id` = 44;
