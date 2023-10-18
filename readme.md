@@ -6,3 +6,5 @@
 6 - SELECT * FROM degrees WHERE level = 'magistrale';
 7 - SELECT COUNT(*) AS departments_count FROM departments;
 8 - SELECT * FROM teachers WHERE phone IS null;
+
+
