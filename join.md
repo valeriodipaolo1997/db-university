@@ -7,3 +7,8 @@ GROUP BY `year`;
 SELECT COUNT(*) AS `teachers_number`, `office_address` 
 FROM `teachers` 
 GROUP BY `office_address`;
+
+<!--query n 3-->
+SELECT COUNT(`exam_id`) AS `exams_count`, AVG(`vote`) AS `average_vote` 
+FROM `exam_student` 
+GROUP BY `exam_id`;
